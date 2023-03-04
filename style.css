@@ -519,13 +519,11 @@ footer {
         text-indent: 0;
         padding: 0;
         margin: 0;
-        border:2px solid red;
     }
 
     .icon-container{
         padding:0;
     text-indent: 0;
-        border:2px solid red;
     }
     .main>div>h1+p>span{
         width: fit-content;
