@@ -63,8 +63,8 @@ body {
     right: 1em;
     z-index: 5;
     border-radius: 50%;
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
     color:royalblue;
     border:none;
     cursor: pointer;
@@ -130,28 +130,27 @@ body>.main>div>h1 {
 }
 
 .main>div>h1+p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
-    text-indent: 1rem;
+    padding-left: 0.5rem;
+    /* text-indent: 1rem; */
     /* margin-top: 1.5rem; */
     display: flex;
     margin-top: 1rem;
     font-size: calc(1rem + 1vw);
-
+    /* border:2px solid red; */
 }
 
-.main>div>h1+p::after {
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    display: block;
+.main>div>h1+p>span{
+    
+    
+    
     color: royalblue;
-    font-size: calc(1rem + 1vw);
+    /* border:2px solid red; */
     overflow: hidden;
-    content: "Software Developer";
-    white-space: nowrap;
     width: 0;
-    margin-top: calc(0.2rem + 0.28vh);
+    text-align: left;
+    /* border:2px solid red; */
+  
     animation-name: typing, binking-border;
     animation-duration: 5s, 300ms;
     animation-iteration-count: infinite;
@@ -166,7 +165,7 @@ body>.main>div>h1 {
     }
 
     50% {
-        width: calc(12rem + 12vw);
+        width: calc(3rem + 10vw);
     }
 
     100% {
@@ -477,6 +476,15 @@ footer {
 
 
 @media screen and (max-width:1000px) {
+    #about>div>div>section>section {
+        padding: 0.8rem 0;
+        /* border: 2px solid purple; */
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        list-style: none;
+        row-gap: 1.2rem;
+    }
     .main{
         /* border:2px solid brown; */
         justify-content: center;
@@ -500,7 +508,7 @@ footer {
     .main >div >h1{
         /* border:2px solid green; */
         text-align: center;
-        font-size: x-large !important;
+        font-size: xx-large !important;
     }
 
     .main >div >p{
@@ -510,15 +518,20 @@ footer {
         font-size: large;
         text-indent: 0;
         padding: 0;
+        margin: 0;
+        border:2px solid red;
     }
 
-    .main>div>h1+p::after{
-        content: "Software Developer";
+    .icon-container{
+        padding:0;
+    text-indent: 0;
+        border:2px solid red;
+    }
+    .main>div>h1+p>span{
         width: fit-content;
-
         animation: none;
-        
     }
+
 
     #close-menu{
         display: initial;
